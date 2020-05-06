@@ -1,12 +1,14 @@
 <head>
-<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
-<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
+  <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+  <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
+  <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"> </script>
 </head>
 
-<body style='margin : 0px; overflow: hidden;'>
-<a-scene embedded="" arjs="trackingMethod: best;" class="" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui=""> 
+<body >
+<a-scene embedded="" arjs="trackingMethod: best; "sourceType: webcam; debugUIEnabled: false;" class="" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="" >
+
 <a-marker type="pattern" url="https://raw.githubusercontent.com/chandu607/ar-demo/master/pattern-marker.patt" id="aframe-scene" >    
-    <a-image id="img1" src="https://raw.githubusercontent.com/chandu607/ar-demo/master/ig.png" position="-.9 0 -.6" rotation="-90 0 0" width="" height="" transparent="false" shader="standard" scale="1 1 1" visible="" material="" geometry=""></a-image>
+        <a-image id="img1" src="https://raw.githubusercontent.com/chandu607/ar-demo/master/ig.png" position="-.9 0 -.6" rotation="-90 0 0" width="" height="" transparent="false" shader="standard" scale="1 1 1" visible="" material="" geometry=""></a-image>
 	<a-image id="img2" src="https://raw.githubusercontent.com/chandu607/ar-demo/master/lc.png" position=".9 0 .6" rotation="-90 0 0" width="" height="" transparent="false" shader="standard" scale="1 1 1" visible="" material="" geometry=""></a-image>
 	<a-image id="img3" src="https://raw.githubusercontent.com/chandu607/ar-demo/master/ep.png" position="-.9 0 .6" rotation="-90 0 0" width="" height="" transparent="false" shader="standard" scale="1 1 1" visible="" material="" geometry=""></a-image>
 	<a-image id="img4" src="https://raw.githubusercontent.com/chandu607/ar-demo/master/ih.png" position=".9 0 -.6" rotation="-90 0 0" width="" height="" transparent="false" shader="standard" scale="1 1 1" visible="" material="" geometry=""></a-image>
