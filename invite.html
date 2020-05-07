@@ -9,25 +9,7 @@
     <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/2.0.8/aframe/build/aframe-ar.js"></script>
     <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v4.1.2/dist/aframe-extras.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-      AFRAME.registerComponent('vidhandler', {
-  init: function () {
-    this.toggle = false;
-    document.querySelector("#vid").pause(); //reference to the video
-  },
-  tick:function(){  
-   if(document.querySelector("a-marker").object3D.visible == true){
-     if(!this.toggle){
-       this.toggle = true;
-       document.querySelector("#vid").play();
-     }
-   }else{
-     this.toggle = false;
-     document.querySelector("#vid").pause();
-   }
-  }
-});
-    </script>
+    
   </head>
   
   <body style="margin : 0px; overflow: hidden;">
